@@ -1,0 +1,31 @@
+.features-list {
+  display: flex;
+  gap: 30px;
+
+&__img {
+  height: 120px;
+  background-color: var(--additional-background-color);
+  border: 0px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+&__header {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+&__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+}
+

@@ -1,0 +1,10 @@
+.our-team {
+  background-color: var(--additional-background-color);
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    }
+}
+
+

@@ -1,0 +1,64 @@
+
+.footer {
+  background-color: var(--secondary-background-color);
+  padding: 60px 0;
+
+    &__flex {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+    }
+
+    &__logo {
+    color: var(--white-color);
+    }
+
+    &__contacts {
+    flex-shrink: 0;
+    }
+
+    &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-decoration-line: none;
+    display: block;
+    margin-bottom: 9px;
+    }
+
+    &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-link-color);
+    text-decoration-line: none;
+    display: block;
+    transition: color var(--timing-function) 250ms;
+    }
+
+    &__link:hover,
+    &__link:focus {
+    color: var(--accent-color);
+    }
+
+    &__link:nth-child(2) {
+    margin-bottom: 9px;
+    }
+
+    &__motivation {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    display: block;
+    }
+
+}

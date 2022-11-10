@@ -1,0 +1,30 @@
+.clients {
+  display: flex;
+  gap: 30px;
+
+    &__item {
+    height: 92px;
+    width: 170px;
+    }
+    
+    &__link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: var(--team-logo-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid currentColor;
+    transition: color var(--timing-function) 250ms;
+    }
+
+    &__link:hover,
+    &__link:focus {
+    color: var(--accent-color);
+    }
+
+    &__logo {
+    fill: currentColor;
+    }
+}

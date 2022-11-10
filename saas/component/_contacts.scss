@@ -1,0 +1,24 @@
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration-line: none;
+  padding: 32px 0;
+  color: inherit;
+  transition: color var(--timing-function) 250ms;
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
