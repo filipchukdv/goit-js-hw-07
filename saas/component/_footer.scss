@@ -9,8 +9,10 @@
     align-items: baseline;
     }
 
-    &__logo {
-    color: var(--white-color);
+    &__logo{
+     color: var(--white-color);
+          margin-right: 0;
+     padding: 0;
     }
 
     &__contacts {
@@ -26,6 +28,7 @@
     color: var(--white-color);
     text-decoration-line: none;
     display: block;
+    margin-top: 20px;
     margin-bottom: 9px;
     }
 
