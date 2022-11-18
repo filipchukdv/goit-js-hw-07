@@ -8,7 +8,15 @@
   border-right: transparent solid 1px;
   padding-bottom: 30px;
 
-    &__name {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -16,17 +24,29 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 10px;
-    }
-    
-    &__position {
+  }
+
+  &__position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    }
+  }
 
-    &__description {
+  &__description {
     padding: 30px 0 16px 0;
-    }
-}
+  }
 
+  &__img {
+    
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+}

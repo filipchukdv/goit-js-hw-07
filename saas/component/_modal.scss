@@ -14,8 +14,6 @@
   pointer-events: none;
 }
 .form {
-  width: 528px;
-  height: 581px;
   background-color: var(--white-color);
   position: absolute;
   top: 50%;
@@ -28,11 +26,23 @@
   transition: scale var(--timing-function) 750ms;
   padding: 40px;
 
-    .backdrop.is-hidden & {
-    scale: 0.1;
-    }
+ @media screen and (max-width:479px) {
+    width: 90vw;
+  }
 
-    &__button-close{
+  @media screen and (min-width:480px) {
+    width:450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
+  .backdrop.is-hidden & {
+    scale: 0.1;
+  }
+
+  &__button-close {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
@@ -46,13 +56,13 @@
     background-color: var(--white-color);
     cursor: pointer;
     z-index: 1;
-    }
+  }
 
-    &__button-close:hover {
+  &__button-close:hover {
     fill: var(--accent-color);
-    }
+  }
 
-    &__header {
+  &__header {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -60,22 +70,22 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 12px;
-    }
+  }
 
-    &__input {
+  &__input {
     margin-bottom: 10px;
     position: relative;
-    }
+  }
 
-    &__input-label {
+  &__input-label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    }
+  }
 
-    &__input-wrapper {
+  &__input-wrapper {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -86,13 +96,13 @@
     height: 40px;
     padding-left: 42px;
     transition: border var(--timing-function) 250ms;
-    }
+  }
 
-    .form__input:focus-within &__input-wrapper {
+  .form__input:focus-within &__input-wrapper {
     border: 1px solid var(--accent-color);
-    }
+  }
 
-    .text-area-wrapper {
+  .text-area-wrapper {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -103,24 +113,24 @@
     border-radius: 4px;
     padding: 12px 16px;
     transition: border var(--timing-function) 250ms;
-    }
+  }
 
-    &__text:focus-within .text-area-wrapper {
+  &__text:focus-within .text-area-wrapper {
     border: 1px solid var(--accent-color);
-    }
+  }
 
-    &__icon {
+  &__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transition: fill var(--timing-function) 250ms;
-    }
+  }
 
-    .form__input:focus-within &__icon {
+  .form__input:focus-within &__icon {
     fill: var(--accent-color);
-    }
+  }
 
-    &__submit {
+  &__submit {
     width: 200px;
     height: 50px;
     background-color: #188ce8;
@@ -135,7 +145,5 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    }
-
+  }
 }
-

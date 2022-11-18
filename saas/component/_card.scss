@@ -1,15 +1,24 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
+  flex-direction: column;
+
+  @media screen and (min-width:768px) {
+   flex-direction: row; 
+  }
 }
 .card {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc((100% / 3) - 30px);
-  transition: box-shadow var(--timing-function) 250ms;
+   transition: box-shadow var(--timing-function) 250ms;
   flex-grow: 0;
+
+  @media screen and (min-width:768px) {
+   flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width:1200px) {
+   flex-basis: calc((100% - 90px) / 3);
+  }
 
     &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -19,6 +28,10 @@
     &__link {
     color: inherit;
     text-decoration: none;
+    height: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
     }
 
     &__description {
@@ -33,6 +46,7 @@
     padding: 63px 24px;
     translate: 0%;
     transition: translate var(--timing-function) 250ms;
+    flex-grow: 1;
     }
 
     &:hover .card__description {
@@ -42,6 +56,15 @@
     &__image-thumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width:767px) {
+      max-width: 450px;
     }
 
+    @media screen and (min-width:768px) {
+      max-width: 354px;
+    }
+    }
+
+   
 }

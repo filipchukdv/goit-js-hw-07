@@ -1,12 +1,14 @@
 .footer-form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
-    &__input {
+  &__input {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     outline: none;
-    width: 358px;
+    position: relative;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -15,9 +17,25 @@
     margin-right: 12px;
     padding: 16px 15px;
     color: var(--white-color);
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    left: 50%;
+    translate: -50%;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 450px;
     }
 
-    &__submit {
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      left: 0;
+      translate: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__submit {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -34,5 +52,6 @@
     align-items: center;
     border: 0px solid transparent;
     fill: var(--white-color);
-    }
+    margin: 0 auto;
+  }
 }

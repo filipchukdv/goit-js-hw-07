@@ -3,8 +3,16 @@
 
   &__list {
     display: flex;
-    gap: 30px;
+      gap: 30px;
+      flex-direction: column;
+    
+      @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
+
+    @media screen and (min-width: 1200px) { 
+      
+    }
+  }
 }
-
-

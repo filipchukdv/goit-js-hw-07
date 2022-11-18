@@ -1,25 +1,43 @@
-
 .footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0;
 
-    &__flex {
+  &__flex {
     display: flex;
-    gap: 70px;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
     }
 
-    &__logo{
-     color: var(--white-color);
-          margin-right: 0;
-     padding: 0;
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+      flex-direction: row;
+      
     }
+  }
 
-    &__contacts {
+  &__logo {
+    color: var(--white-color);
+    margin-right: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+      text-align: start;
+    }
+  }
+
+  &__contacts {
     flex-shrink: 0;
-    }
 
-    &__address {
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  &__address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -30,9 +48,10 @@
     display: block;
     margin-top: 20px;
     margin-bottom: 9px;
-    }
+    text-align: center;
+  }
 
-    &__link {
+  &__link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -42,18 +61,23 @@
     text-decoration-line: none;
     display: block;
     transition: color var(--timing-function) 250ms;
-    }
+    text-align: center;
+  }
 
-    &__link:hover,
-    &__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--accent-color);
-    }
+  }
 
-    &__link:nth-child(2) {
-    margin-bottom: 9px;
-    }
+  &__link:nth-child(2) {
+    margin-bottom: 8px;
 
-    &__motivation {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__motivation {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -61,7 +85,34 @@
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
-    display: block;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+      text-align: start;
+    }
+  }
+
+  &__flex-tablet {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+     flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+
     }
 
+     @media screen and (min-width: 1200px) {
+      gap: 70px;
+    }
+  }
+
+  &__social{
+    @media screen and (min-width:1200px) {
+      margin-right: 35px;
+      
+    }
+  }
 }

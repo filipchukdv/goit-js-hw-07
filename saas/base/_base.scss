@@ -1,2 +1,8 @@
 @import './font';
 @import './reset';
+
+.js-body{
+    &.modal-open{
+        overflow: hidden;
+    }
+}

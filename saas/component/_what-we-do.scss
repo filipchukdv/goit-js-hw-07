@@ -1,5 +1,10 @@
 .what-we-do {
+  display: none;
   padding-top: 0;
+  
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
   
     &__list {
     display: flex;
