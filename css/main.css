@@ -114,12 +114,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .card {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .card {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 .card:hover {
@@ -153,15 +153,16 @@ img {
 .card__image-thumb {
   position: relative;
   overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .card__image-thumb {
-    max-width: 450px;
-  }
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card__image-thumb {
     max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__image-thumb {
+    max-width: 370px;
   }
 }
 
@@ -265,12 +266,18 @@ img {
   align-items: center;
 }
 .features-list__header {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__header {
+    text-align: start;
+  }
 }
 .features-list__text {
   font-size: 14px;
@@ -282,12 +289,18 @@ img {
   display: flex;
   gap: 8px;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 .filter__button {
@@ -328,10 +341,15 @@ img {
 .form-checkbox__label {
   position: relative;
   left: 11px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .form-checkbox__label {
+    font-size: 14px;
+  }
 }
 .form-checkbox__label::before {
   content: " ";
@@ -506,6 +524,11 @@ img {
   margin-bottom: 9px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: start;
+  }
+}
 .footer__link {
   font-style: normal;
   font-weight: 400;
@@ -518,6 +541,11 @@ img {
   display: block;
   transition: color var(--timing-function) 250ms;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    text-align: start;
+  }
 }
 .footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
@@ -642,6 +670,7 @@ img {
   color: var(--white-color);
   margin: 0 auto;
   max-width: 360px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -649,7 +678,6 @@ img {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
-    margin-bottom: 30px;
   }
 }
 .hero__button {

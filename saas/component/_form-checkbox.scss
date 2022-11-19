@@ -11,12 +11,14 @@
   &__label {
     position: relative;
     left: 11px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     
-
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+    }
   }
 
   &__label::before {

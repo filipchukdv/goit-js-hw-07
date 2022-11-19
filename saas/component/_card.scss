@@ -13,11 +13,11 @@
   flex-grow: 0;
 
   @media screen and (min-width:768px) {
-   flex-basis: calc((100% - 60px) / 2);
+   flex-basis: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width:1200px) {
-   flex-basis: calc((100% - 90px) / 3);
+   flex-basis: calc((100% - 60px) / 3);
   }
 
     &:hover {
@@ -56,14 +56,16 @@
     &__image-thumb {
     position: relative;
     overflow: hidden;
-
-    @media screen and (max-width:767px) {
-      max-width: 450px;
-    }
-
+  max-width: 450px;
+    
     @media screen and (min-width:768px) {
       max-width: 354px;
     }
+
+    @media screen and (min-width:1200px) {
+      max-width: 370px;
+    }
+
     }
 
    

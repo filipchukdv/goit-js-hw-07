@@ -55,13 +55,14 @@
     color: var(--white-color);
     margin: 0 auto;
     max-width: 360px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 1200px) {
       font-weight: 900;
       font-size: 44px;
       line-height: 1.36;
       max-width: 696px;
-      margin-bottom: 30px;
+      
     }
   }
 
